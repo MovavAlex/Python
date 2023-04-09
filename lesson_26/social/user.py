@@ -9,3 +9,9 @@ class User:
         self.surname = self.__data["LastName"] if not surname else surname
         self.subscribes = []
         self.subscribers = []
+
+    def log_in(self, l, p):
+        if l == self.login and p == self.__password:
+            return True
+        else:
+            return False
